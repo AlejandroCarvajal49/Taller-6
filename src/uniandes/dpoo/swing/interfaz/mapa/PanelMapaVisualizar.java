@@ -70,6 +70,6 @@ public class PanelMapaVisualizar extends JPanel
         {
             this.restaurantes = nuevosRestaurantes;
         }
-        repaint( );
+        repaint();
     }
 }
