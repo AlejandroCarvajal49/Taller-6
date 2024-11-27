@@ -34,6 +34,7 @@ public class PanelEditarRestaurante extends JPanel
     	txtNombre = new JTextField( 20 );
     	JLabel lblNombre = new JLabel( "Nombre:" );
     	JPanel panelNombre = new JPanel( );
+    	
     	panelNombre.setLayout( new FlowLayout( FlowLayout.LEFT ) );
     	panelNombre.add( lblNombre );
     	panelNombre.add( txtNombre );
@@ -76,8 +77,6 @@ public class PanelEditarRestaurante extends JPanel
     	add( panelNombre );
     	add( panelCalificacion );
     	add( panelVisitado );
-    	
-    	
     	
 
     }

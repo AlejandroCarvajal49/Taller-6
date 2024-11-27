@@ -51,11 +51,13 @@ public class VentanaAgregarRestaurante extends JFrame
 
         // Agrega el panel donde va a estar el mapa
         panelMapa = new PanelMapaAgregar();
-        add(panelMapa, BorderLayout.CENTER);
+        add(panelMapa);
 
         // Inicializa el panel de detalles del restaurante
+        
+        JPanel sur = new JPanel();
         panelDetalles = new PanelEditarRestaurante();
-        add(panelDetalles, BorderLayout.NORTH);
+        add(panelDetalles, BorderLayout.SOUTH);
 
         // Panel para los botones
         JPanel panelBotones = new JPanel(new FlowLayout(FlowLayout.RIGHT));
@@ -66,6 +68,7 @@ public class VentanaAgregarRestaurante extends JFrame
         btnCerrar = new JButton("Cerrar");
         btnCerrar.addActionListener(e -> dispose());
         panelBotones.add(btnCerrar);
+        panelBotones.add(panelDetalles);
 
         // Agrega el panel de botones al layout
         add(panelBotones, BorderLayout.SOUTH);
